@@ -37,15 +37,6 @@
             padding: 20px;
             max-width: 1200px;
             margin: 20px auto;
-            display: flex;
-            flex-direction: row;
-        }
-        .content-left {
-            width: 30%;
-            margin-right: 20px;
-        }
-        .content-right {
-            width: 70%;
         }
         h2 {
             color: #444;
@@ -63,7 +54,8 @@
             padding: 10px;
             margin: 20px 0;
             background-color: #f0f0f0;
-            width: 100%;
+            width: 250px;
+            float: right;
         }
         .infobox table {
             width: 100%;
@@ -93,21 +85,6 @@
         .references li {
             margin-bottom: 10px;
         }
-        .product-overview {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-top: 20px;
-            background-color: #f9f9f9;
-            width: 100%;
-        }
-        .product-overview th, .product-overview td {
-            padding: 8px;
-            border: 1px solid #ddd;
-        }
-        .product-overview th {
-            background-color: #f4f4f4;
-            text-align: left;
-        }
     </style>
 </head>
 <body>
@@ -125,165 +102,100 @@
 </nav>
 
 <main>
-    <!-- Left Sidebar for Product Trees -->
-    <div class="content-left">
-        <h2>Products Overview</h2>
+    <section id="about">
+        <h2>About KCR</h2>
+        <div class="infobox">
+            <h3>Overview</h3>
+            <table>
+			    <img src="logo.png" alt="KCR Logo" style="max-width: 200px; height: auto;">
+                <tr>
+                    <th>Name:</th>
+                    <td>KCR (Kenzo Code Resources)</td>
+                </tr>
+                <tr>
+                    <th>Founder:</th>
+                    <td>Kenzo Basar</td>
+                </tr>
+                <tr>
+                    <th>Type:</th>
+                    <td>Software Development Group</td>
+                </tr>
+                <tr>
+                    <th>Founded:</th>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <th>Succeded by:</th>
+                    <td>J8gho Group</td>
+                </tr>
+            </table>
+        </div>
+        <p>KCR (Kenzo's Computer Research) is a software development group that focuses on creating lightweight, efficient tools and utilities for various platforms. Founded by Kenzo Basar, the group is known for its minimalistic approach to development, creating software solutions that prioritize speed and low system resource usage.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Notable Projects</h2>
         <ul class="toc">
-            <li><a href="#kcr-overview">KCR</a></li>
-            <li><a href="#kenzocode-overview">KenzoCode</a></li>
-            <li><a href="#osbbin-overview">OSbbin</a></li>
-            <li><a href="#lkt-editor-overview">LKT Text Editor</a></li>
+            <li><a href="#lkt">LKT (Lightweight Text Editor)</a></li>
+            <li><a href="#osbbin">OSbbin</a></li>
+            <li><a href="#kenzoos">Kenzo OS</a></li>
         </ul>
-    </div>
 
-    <!-- Right Content Area for Product Details -->
-    <div class="content-right">
-        <section id="about">
-            <h2>About KCR</h2>
-            <div class="infobox">
-                <h3>Overview</h3>
-                <table>
-                    <tr>
-                        <th>Name:</th>
-                        <td>KCR</td>
-                    </tr>
-                    <tr>
-                        <th>Founder:</th>
-                        <td>Kenzo Basar</td>
-                    </tr>
-                    <tr>
-                        <th>Type:</th>
-                        <td>Software Development Group</td>
-                    </tr>
-                    <tr>
-                        <th>Founded:</th>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <th>Successor:</th>
-                        <td>J8gho Group</td>
-                    </tr>
-                </table>
-            </div>
-            <p>KCR is a software development group focused on creating efficient and minimalistic tools tailored for Windows platforms. Founded by Kenzo Basar in 2024, KCR aims to develop lightweight software solutions that optimize performance and enhance productivity for developers and users alike.</p>
-        </section>
+        <h3 id="lkt">LKT (Lightweight Text Editor)</h3>
+        <p>LKT is a lightweight text editor designed by KCR for users who want a fast, simple, and minimalistic tool for basic text editing. It is only 10 KB in size, making it ideal for low-storage systems.</p>
 
-        <section id="projects">
-            <h2>Notable Projects</h2>
+        <h3 id="osbbin">OSbbin</h3>
+        <p>OSbbin is an operating system shell that includes various utilities like a sticky notes widget, web browser, and clock. It aims to provide an efficient and basic environment for users who prefer simplicity.</p>
 
-            <!-- KCR Overview Table -->
-            <div class="product-overview" id="kcr-overview">
-                <h3>KCR Overview</h3>
-                <table class="product-overview">
-                    <tr>
-                        <th>Product Name:</th>
-                        <td>KCR</td>
-                    </tr>
-                    <tr>
-                        <th>Description:</th>
-                        <td>A software development group creating efficient tools for Windows platforms.</td>
-                    </tr>
-                    <tr>
-                        <th>Features:</th>
-                        <td>Efficient performance, lightweight design, compatibility with Windows, developer-focused tools.</td>
-                    </tr>
-                    <tr>
-                        <th>Release Year:</th>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <th>Key Projects:</th>
-                        <td>KenzoCode, OSbbin, LKT Text Editor</td>
-                    </tr>
-                </table>
-            </div>
+        <h3 id="kenzoos">Kenzo OS</h3>
+        <p>Kenzo OS is a custom operating system developed by Kenzo Corporation, not from KCR but from the family's oldest group.</p>
+    </section>
 
-            <!-- KenzoCode Overview Table -->
-            <div class="product-overview" id="kenzocode-overview">
-                <h3>KenzoCode</h3>
-                <table class="product-overview">
-                    <tr>
-                        <th>Product Name:</th>
-                        <td>KenzoCode</td>
-                    </tr>
-                    <tr>
-                        <th>Description:</th>
-                        <td>A code editor with features like syntax highlighting and multi-language support for Python, Java, CSS, and more.</td>
-                    </tr>
-                    <tr>
-                        <th>Features:</th>
-                        <td>Multi-language support, lightweight, syntax highlighting, file management, integrated web browsing.</td>
-                    </tr>
-                    <tr>
-                        <th>Release Year:</th>
-                        <td>2024</td>
-                    </tr>
-                </table>
-            </div>
+    <section id="tools">
+        <h2>Tools Developed</h2>
+        <ul>
+            <li><strong>KCR-SOFT</strong>: A suite of development tools and utilities for various purposes.</li>
+            <li><strong>KenzoCode</strong>: An efficient code editor with features like syntax highlighting, multi-language support, and integrated web browsing.</li>
+            <li><strong>Lin8 Emulator</strong>: A tool to emulate operating system environments for development and testing.</li>
+        </ul>
+    </section>
 
-            <!-- OSbbin Overview Table -->
-            <div class="product-overview" id="osbbin-overview">
-                <h3>OSbbin</h3>
-                <table class="product-overview">
-                    <tr>
-                        <th>Product Name:</th>
-                        <td>OSbbin</td>
-                    </tr>
-                    <tr>
-                        <th>Description:</th>
-                        <td>A lightweight OS interface designed for creating simple utilities with basic features for Windows.</td>
-                    </tr>
-                    <tr>
-                        <th>Features:</th>
-                        <td>Minimalistic UI, sticky notes, web browser, clock, exit features.</td>
-                    </tr>
-                    <tr>
-                        <th>Release Year:</th>
-                        <td>2024</td>
-                    </tr>
-                </table>
-            </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>To reach KCR or contribute to ongoing projects, visit the <a href="https://github.com/KCR-SOFT" target="_blank">official GitHub page</a>.</p>
+    </section>
 
-            <!-- LKT Text Editor Overview Table -->
-            <div class="product-overview" id="lkt-editor-overview">
-                <h3>LKT Text Editor</h3>
-                <table class="product-overview">
-                    <tr>
-                        <th>Product Name:</th>
-                        <td>LKT Text Editor</td>
-                    </tr>
-                    <tr>
-                        <th>Description:</th>
-                        <td>A minimal text editor for casual users who need basic editing features without complex options.</td>
-                    </tr>
-                    <tr>
-                        <th>Features:</th>
-                        <td>Lightweight, simple interface, quick startup, ideal for low-storage systems.</td>
-                    </tr>
-                    <tr>
-                        <th>Release Year:</th>
-                        <td>2024</td>
-                    </tr>
-                </table>
-            </div>
-
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>For inquiries, please reach out via the official KCR website or email.</p>
-        </section>
-
-        <section id="references" class="references">
-            <h2>References</h2>
-            <ul>
-                <li>KenzoCode GitHub Repository</li>
-                <li>OSbbin Documentation</li>
-                <li>LKT Text Editor Release Notes</li>
-            </ul>
-        </section>
-    </div>
+    <section id="references" class="references">
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://github.com/KCR-SOFT" target="_blank">KCR-SOFT GitHub</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Software_development" target="_blank">Software Development (Wikipedia)</a></li>
+        </ul>
+    </section>
 </main>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <p>&copy; 2024 KCR - All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
